@@ -1,0 +1,23 @@
+.tabs {
+    display: flex;
+}
+
+.tabs__button.active {
+    background: #1ab188;
+    color: #ffffff;
+}
+
+.tabs__button {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}

@@ -1,0 +1,56 @@
+<%- include('header.ejs') %>
+
+<div class="page">
+
+    <div class="auth-block">
+        <div class="tabs">
+            <a href="#form_id_1" class="tabs__button active">Регистрация</a>
+            <a href="#form_id_2" class="tabs__button">Логин</a>
+
+        </div>
+
+
+
+        <form class="form form_auth active register-js" id="form_id_1">
+            <div class="errors-line mv20">
+
+            </div>
+
+            <div class="center-aligner mv20">
+                <input type="text" class="input" placeholder="Имя" name="name">
+            </div>
+            <div class="center-aligner mv20">
+                <input type="password" class="input" placeholder="Пароль" name="password">
+            </div>
+            <div class="center-aligner mv20 mb_x2">
+                <input type="password" class="input" placeholder="Потвердить Пароль" name="confirm">
+            </div>
+            <div class="center-aligner mv20 ">
+                <input type="submit" class="btn btn_full" value="Отправить">
+            </div>
+
+
+        </form>
+        <form class="form form_auth login-js" id="form_id_2">
+
+            <div class="errors-line mv20"></div>
+
+            <div class="center-aligner mv20">
+                <input type="text" class="input" placeholder="Имя" name="name">
+            </div>
+            <div class="center-aligner mv20">
+                <input type="password" class="input" placeholder="Пароль" name="password">
+            </div>
+            <div class="center-aligner mv20">
+                <input type="submit" class="btn btn_full" value="Отправить">
+            </div>
+
+
+        </form>
+    </div>
+
+
+</div>
+
+
+<%- include('./footer.ejs') %>

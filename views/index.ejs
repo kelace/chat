@@ -1,0 +1,94 @@
+<%- include('header.ejs') %>
+
+<div class="messenger full_view">
+
+    <div class="messenger__inner">
+
+        <div class="side">
+            <div class="side__top">
+
+            </div>
+            <div class="side__search ">
+                <form>
+                    <input type="text" class="input input_search" name="username" placeholder="search">
+                    <img src="./img/search.svg" alt="" class="search__icon">
+                </form>
+            </div>
+            <div class="side__search-result mb_x2">
+
+            </div>
+            <div class="side__offers ">
+
+
+                <% sender.forEach(element => { %>
+                <div class="sider_offer">
+                    <div class="user" data-user-id="<%- element.sender%>" data-user-name="<%- element.sender_name%>">
+                        <span class="user_offer_name">
+                            <%= element.sender_name %>
+                        </span>
+
+                        <button href="/offer-accepted/<%- element.sender%>" class="accept-js btn btn_search">Принять</button>
+                        <button href="/offer-declined/<%- element.sender %>" class="decline-js btn btn_search">Отказать</button>
+                    </div>
+                </div>
+                <% }); %>
+
+
+            </div>
+            <div class="side__users mb_x2">
+
+                <% friends.forEach(element => { %>
+                <div class="friend" data-user-id="<%= element.id%>"><%= element.name %></div>
+                <% }); %>
+
+
+
+
+            </div>
+
+            <div class="side__normalizer ">
+                <a href="/logout" class="btn  btn_small logout-js ">Выйти</a>
+            </div>
+            
+        </div>
+        <div class="main">
+
+            <div class="chat">
+                <div class="centred_x_y full_view text_theme_1">
+                    Выберите диалог
+                </div>
+
+               
+                <!-- <div class="chat__inner">
+                    <div class="messages">
+                        <div class="message_line own">  <div class="message">хай</div></div>
+                        <div class="message_line own">  <div class="message">хай</div></div>
+                        <div class="message_line friend">  <div class="message">хай</div></div>
+                        <div class="message_line own">  <div class="message">хай</div></div>
+                        <div class="message_line own">  <div class="message">хай</div></div>
+                      
+                      
+                    </div>
+
+                    <div class="caht_from">
+                        <form  class="form">
+                            <textarea class="textarea"></textarea>
+                            <input type="submit">
+                        </form>
+                    </div>
+
+                </div> -->
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<%- include('./footer.ejs') %>

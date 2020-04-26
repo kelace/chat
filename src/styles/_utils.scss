@@ -1,0 +1,168 @@
+.mt{
+    margin-top: 10px;
+}
+.mt_x2{
+    margin-top: 20px;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.centred_x_y{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full_view{
+    height: 100vh;
+}
+
+.text_theme_1{
+    font-size: 21px;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  
+  }
+  .user{
+    color: #fff;
+    padding: 0 10px;
+  }
+  .page {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .center-aligner {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .message_top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+  
+    padding-left: 10px;
+  }
+  
+  .hamburger{
+    display: inline-block;
+    width: 15px;
+    background-color: #000;
+    height: 2px;
+    position: relative;
+  
+  }
+  
+  .hamburger::before{
+    content: '';
+    height: 2px;
+    width: 15px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background-color: #000;
+  }
+  
+  .hamburger::after{
+    content: '';
+    height: 2px;
+    width: 15px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: #000;
+  }
+  
+  .mv20 {
+    margin: 20px 0;
+  }
+  .mv40 {
+    margin: 40px 0;
+  }
+  
+  
+  
+  .tabs__button {
+    display: flex;
+  }
+  .tab__button {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  
+  .tab__button.active {
+    background: #1ab188;
+    color: #ffffff;
+  }
+  .mb {
+    margin-bottom: 20px;
+  }
+  .mb_x2 {
+    margin-bottom: 40px;
+  }
+  
+  .errors-line {
+    min-height: 14px;
+    color: red;
+    text-align: center;
+  }
+  
+  .friend {
+  
+      padding: 20px 10px;
+      // background-color: rgb(33, 44, 53);
+      cursor: pointer;
+      color: #919090;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+  
+  }
+  .friend.active{
+      background-color:rgba(51, 67, 78, 0.651);
+  }
+  .friend:hover{
+      background-color:rgba(51, 67, 78, 0.651);
+  }
+  
+  
+  .chat_from form{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-right: 25px;
+      justify-content: space-between;
+      padding-left: 25px;
+  }
+  
+  .ml{
+    margin-left: 10px;
+  }

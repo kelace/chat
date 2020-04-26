@@ -1,0 +1,26 @@
+.side {
+  border-radius: 0 20px 0 0;
+
+  width: 262px;
+  z-index: 1;
+  height: 100%;
+  background-color: #2a3843;
+}
+
+.side__normalizer {
+  padding: 0 10px;
+}
+
+.side_hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+@media screen and(max-width:567px) {
+  .side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
